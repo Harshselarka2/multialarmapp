@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <!-- Number of Alarms -->
+    <EditText
+        android:id="@+id/number_of_alarm_you_want_to_set"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter number of alarms"
+        android:inputType="number"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Time in Minutes -->
+    <EditText
+        android:id="@+id/time_in_minutes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/minutes_0_59"
+        android:inputType="number"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/number_of_alarm_you_want_to_set"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Time in Seconds -->
+    <EditText
+        android:id="@+id/time_in_seconds"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/seconds_0_59"
+        android:inputType="number"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/time_in_minutes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Set Alarms Button -->
+    <Button
+        android:id="@+id/set_alarms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Set Alarms"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/time_in_seconds"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Stop All Alarms Button -->
+    <Button
+        android:id="@+id/stop_all_alarms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Stop All Alarms"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/set_alarms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ListView for displaying alarms -->
+    <ListView
+        android:id="@+id/alarm_list_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/stop_all_alarms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

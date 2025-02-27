@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Multi Alarm App</string>
+    <string name="enter_number_of_alarms">Enter number of alarms</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="stop_all_alarms">Stop All Alarms</string>
+    <string name="seconds_0_59">Seconds (0-59)</string>
+    <string name="minutes_0_59">Minutes (0-59)</string>
+</resources>
